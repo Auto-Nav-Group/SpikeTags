@@ -84,9 +84,9 @@ def main():
                 # offset_y = camera_center[1] - tag.center
                 # x = tags[tag_id][0] + offset_x
                 # y = tags[tag_id][1] + offset_y
-
+                # robot_heading = tags[tag_id][2] + rotation_matrix_to_euler_angles(tag.pose_R)[2]
                 global_results.append((dist, rot, t_round))
-                # print(f"Robot Pose: {x}, {y}")
+                # print(f"Robot Pose: {x}, {y}, {robot_heading}")
 
         cv2.imshow('AprilTags', frame)
 
